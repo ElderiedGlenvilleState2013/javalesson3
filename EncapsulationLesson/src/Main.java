@@ -9,5 +9,19 @@ public class Main {
 
         myBank.depoit(200);
         myBank.withdraw(-34);
+
+
+        //lambda
+       Answerable phone = ()-> {return "hello";};
+
+       System.out.println(phone.answer());
+
+        Predicate isOdd = n -> n % 2 != 0;
+        System.out.println(isOdd.test(2));
+
+        Predicate isEvan = n->n %2 == 0;
+        System.out.println(isEvan.test(2));
+
+
     }
 }
